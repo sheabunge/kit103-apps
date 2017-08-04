@@ -29,15 +29,15 @@ def show_answers(show_all=True):
 
 # Question 1: Set literals
 
-ans['Q1 a'] = None
-ans['Q1 b'] = None
-ans['Q1 c'] = None
+ans['Q1 a'] = {2, 4, 6, 8}
+ans['Q1 b'] = {'Bob', 'Alice', 'Donna', 'Charlie'}
+ans['Q1 c'] = {'a', 'e', 'i', 'o', 'u'}
 
 # Question 2: Set comprehensions
 
-ans['Q2 a'] = None
-ans['Q2 b'] = None
-ans['Q2 c'] = None
+ans['Q2 a'] = {n * 4 for n in range(2, 11, 2)}
+ans['Q2 b'] = {i ** 3 for i in range(1, 7)}
+ans['Q2 c'] = {l for l in 'abracadabra'}
 
 # Question 3: Relationships
 
@@ -49,15 +49,15 @@ bipeds = {'cormorant', 'eagle', 'emu', 'gorilla', 'human', 'kangaroo'}
 can_swim = {'cormorant', 'cow', 'human', 'kangaroo', 'lizard'}
 can_fly = {'aeroplane', 'cormorant', 'eagle'}
 
-ans['Q3 a'] = None
-ans['Q3 b'] = None
-ans['Q3 c'] = None
+ans['Q3 a'] = bipeds < mammals
+ans['Q3 b'] = bipeds <= can_swim
+ans['Q3 c'] = aves <= bipeds
 
 # Question 4: Set membership
 
-ans['Q4 a'] = None
-ans['Q4 b'] = None
-ans['Q4 c'] = None
+ans['Q4 a'] = mammals - can_swim
+ans['Q4 b'] = can_fly | can_swim
+ans['Q4 c'] = bipeds & can_swim - mammals
 
 # Question 5: Combinations
 
@@ -66,19 +66,19 @@ colours = {'red', 'green', 'blue', 'yellow'}
 vehicles = {'car', 'boat', 'rocket'}
 speeds = {'slow', 'fast'}
 
-ans['Q5 a'] = None
-ans['Q5 b'] = None
-ans['Q5 c'] = None
+ans['Q5 a'] = {(speed, vehicle) for speed in speeds for vehicle in vehicles}
+ans['Q5 b'] = {(vehicle1, vehicle2) for vehicle1 in vehicles for vehicle2 in vehicles if vehicle1 != vehicle2}
+ans['Q5 c'] = {(speed, colour, vehicle) for speed in speeds for colour in colours for vehicle in vehicles}
 
 # Question 6: Bags & Bitsets
 # When checking these, note that parts (b)-(e) will look like normal decimal numbers,
 # even though you will have entered binary literals in your answers to (b)-(d).
 # A binary literal is just another way of expressing an integer value.
 
-ans['Q6 a'] = None
-ans['Q6 b'] = None
-ans['Q6 c'] = None
-ans['Q6 d'] = None
-ans['Q6 e'] = None
+ans['Q6 a'] = {'cat': 2, 'hat': 1, 'sat': 3}
+ans['Q6 b'] = 0b11000
+ans['Q6 c'] = 0b01011
+ans['Q6 d'] = 0b10011
+ans['Q6 e'] = 0b01000
 
 # End of answers
