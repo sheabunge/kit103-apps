@@ -2,8 +2,8 @@
 KIT103/KMA155 Programming Assignment 1: Sets
 Submission script
 
-Name: Replace with your name
-ID: Replace with your student ID
+Name: Shea Bunge
+ID: 407095
 
 Enter your answers to each question below, replacing None with the
 code requested. Question 1 part a should be stored in ans['Q1 a']
