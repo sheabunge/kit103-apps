@@ -29,7 +29,7 @@ def show_answers(show_all=True):
 
 # Question 1: Set literals
 
-ans['Q1 a'] = {2, 4, 6, 8}
+ans['Q1 a'] = {2, 4, 6, 8, 10, 12}
 ans['Q1 b'] = {'Bob', 'Alice', 'Donna', 'Charlie'}
 ans['Q1 c'] = {'a', 'e', 'i', 'o', 'u'}
 
@@ -79,6 +79,6 @@ ans['Q6 a'] = {'cat': 2, 'hat': 1, 'sat': 3}
 ans['Q6 b'] = 0b11000
 ans['Q6 c'] = 0b01011
 ans['Q6 d'] = 0b10011
-ans['Q6 e'] = 0b01000
+ans['Q6 e'] = 0b11011
 
 # End of answers
