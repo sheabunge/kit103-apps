@@ -56,7 +56,7 @@ ans['Q3 c'] = aves <= bipeds
 # Question 4: Set membership
 
 ans['Q4 a'] = mammals - can_swim
-ans['Q4 b'] = can_fly | can_swim
+ans['Q4 b'] = can_fly & can_swim
 ans['Q4 c'] = bipeds & can_swim - mammals
 
 # Question 5: Combinations
@@ -67,7 +67,7 @@ vehicles = {'car', 'boat', 'rocket'}
 speeds = {'slow', 'fast'}
 
 ans['Q5 a'] = {(speed, vehicle) for speed in speeds for vehicle in vehicles}
-ans['Q5 b'] = {(vehicle1, vehicle2) for vehicle1 in vehicles for vehicle2 in vehicles if vehicle1 != vehicle2}
+ans['Q5 b'] = {(vehicle1, vehicle2) for vehicle1 in vehicles for vehicle2 in vehicles}
 ans['Q5 c'] = {(speed, colour, vehicle) for speed in speeds for colour in colours for vehicle in vehicles}
 
 # Question 6: Bags & Bitsets
