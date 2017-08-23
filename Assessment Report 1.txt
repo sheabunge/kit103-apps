@@ -1,0 +1,24 @@
+Programming assignment assessment report for Bunge, Shea (407095)
+	Expected	Actual	Score	Feedback
+Q1 a	{2, 4, 6, 8, 10, 12}	{2, 4, 6, 8, 10, 12}	0.25	
+Q1 b	{'Bob', 'Alice', 'Donna', 'Charlie'}	{'Bob', 'Alice', 'Donna', 'Charlie'}	0.25	
+Q1 c	{'a', 'o', 'i', 'e', 'u'}	{'a', 'o', 'i', 'e', 'u'}	0.25	
+Q2 a	{32, 8, 40, 16, 24}	{32, 8, 40, 16, 24}	0.25	
+Q2 b	{64, 1, 8, 216, 27, 125}	{64, 1, 8, 216, 27, 125}	0.25	
+Q2 c	{'r', 'a', 'b', 'd', 'c'}	{'r', 'a', 'b', 'd', 'c'}	0.25	
+Q3 a	False	False	0.25	
+Q3 b	False	False	0.25	
+Q3 c	True	True	0.25	
+Q4 a	{'gorilla'}	{'gorilla'}	0.25	
+Q4 b	{'cormorant'}	{'aeroplane', 'cow', 'human', 'cormorant', 'lizard', 'eagle', 'kangaroo'}	0	
+Q4 c	{'cormorant'}	{'cormorant'}	0.25	
+Q5 a	{('slow', 'car'), ('slow', 'boat'), ('fast', 'rocket'), ('slow', 'rocket'), ('fast', 'car'), ('fast', 'boat')}	{('slow', 'car'), ('slow', 'boat'), ('fast', 'rocket'), ('slow', 'rocket'), ('fast', 'car'), ('fast', 'boat')}	0.25	
+Q5 b	{('boat', 'boat'), ('car', 'rocket'), ('boat', 'car'), ('boat', 'rocket'), ('car', 'boat'), ('rocket', 'car'), ('rocket', 'rocket'), ('rocket', 'boat'), ('car', 'car')}	{('car', 'rocket'), ('boat', 'car'), ('boat', 'rocket'), ('car', 'boat'), ('rocket', 'car'), ('rocket', 'boat')}	0	
+Q5 c	{('fast', 'green', 'rocket'), ('slow', 'red', 'rocket'), ('fast', 'red', 'rocket'), ('fast', 'red', 'car'), ('slow', 'blue', 'rocket'), ('fast', 'green', 'car'), ('fast', 'green', 'boat'), ('fast', 'red', 'boat'), ('fast', 'blue', 'car'), ('slow', 'blue', 'car'), ('slow', 'green', 'car'), ('slow', 'green', 'rocket'), ('slow', 'red', 'car'), ('fast', 'yellow', 'boat'), ('slow', 'red', 'boat'), ('slow', 'yellow', 'car'), ('slow', 'green', 'boat'), ('slow', 'blue', 'boat'), ('fast', 'yellow', 'car'), ('fast', 'blue', 'boat')} (first 20 of 24 elements shown)	{('fast', 'green', 'rocket'), ('slow', 'red', 'rocket'), ('fast', 'red', 'rocket'), ('fast', 'red', 'car'), ('slow', 'blue', 'rocket'), ('fast', 'green', 'car'), ('fast', 'green', 'boat'), ('fast', 'red', 'boat'), ('fast', 'blue', 'car'), ('slow', 'blue', 'car'), ('slow', 'green', 'car'), ('slow', 'green', 'rocket'), ('slow', 'red', 'car'), ('fast', 'yellow', 'boat'), ('slow', 'red', 'boat'), ('slow', 'yellow', 'car'), ('slow', 'green', 'boat'), ('slow', 'blue', 'boat'), ('fast', 'yellow', 'car'), ('fast', 'blue', 'boat')} (first 20 of 24 elements shown)	0.25	
+Q6 a	{'cat': 2, 'hat': 1, 'sat': 3}	{'cat': 2, 'hat': 1, 'sat': 3}	0.25	
+Q6 b	0b11000	0b11000	0.25	
+Q6 c	0b01011	0b01011	0.25	
+Q6 d	0b10011	0b10011	0.25	
+Q6 e	0b11011	0b11011	0.25	
+Total score:			4.5	/5
+Note that expected and actual represent VALUES only, so your score for a question may have been manually reduced if your approach to deriving that answer needs improvement.
