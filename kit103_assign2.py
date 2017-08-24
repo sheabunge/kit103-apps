@@ -23,10 +23,10 @@ def q1_sine_wave_check(height, age, has_adult):
 	age - integer age in years
 	has_adult - True iff the person is accompanied by an adult
 	"""
-	if 110 > height or height > 200 or age < 6:
+	if age < 6 or not 110 <= height <= 200:
 		return REJECT
 
-	if 6 <= age <= 9 and not has_adult:
+	if age < 10 and not has_adult:
 		return FIND_ADULT
 
 	return ACCEPT
