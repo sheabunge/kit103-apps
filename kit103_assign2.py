@@ -2,8 +2,8 @@
 KIT103/KMA155 Programming Assignment 2: Logic
 Submission script
 
-Name: Replace with your name
-ID: Replace with your student ID
+Name: Shea Bunge
+ID: 407095
 
 Enter your answers to each question below by completing each function
 or, in the case of Question 4a, filling in the Karnaugh map.
@@ -35,39 +35,39 @@ def q1_sine_wave_check(height, age, has_adult):
 # Question 2: Implementing predicates as functions
 
 def q2_a(a, b):
-	# ¬(a ^ b) ^ (a v b)
+	# ¬(a ∧ b) ∧ (a ∨ b)
 	return not (a and b) and (a or b)
 
 
 def q2_b(a, b, c, d):
-	# a v (¬b v ¬c v ¬d)
+	# a ∨ (¬b ∨ ¬c ∨ ¬d)
 	return a or (not b or not c or not d)
 
 
 def q2_c(a, b, c):
-	# (a v b) ^ (a v c)
+	# (a ∨ b) ∧ (a ∨ c)
 	return (a or b) and (a or c)
 
 
 def q2_d(a):
-	# a ^ ¬a
+	# a ∧ ¬a
 	return a and not a
 
 
 # Question 3: Simplifying predicates
 
 def q3_a(a, b):
-	# a xor b
+	# a ⊕ b
 	return a ^ b
 
 
 def q3_b(a, b, c, d):
-	# a v ¬(b ^ c ^ d)
+	# a ∨ ¬(b ∧ c ∧ d)
 	return a or not (b and c and d)
 
 
 def q3_c(a, b, c):
-	# a v b ^ c
+	# a ∨ b ∧ c
 	return a or b and c
 
 
