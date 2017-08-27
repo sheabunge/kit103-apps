@@ -4,17 +4,16 @@ from truthtable import TruthTable
 questions = {'a': 2, 'b': 4, 'c': 3, 'd': 1}
 
 for q, var_count in questions.items():
+	print()
+
 	predicate1 = getattr(assign2, 'q2_' + q)
 	predicate2 = getattr(assign2, 'q3_' + q)
 
 	result1 = TruthTable(var_count, predicate1)
 	result2 = TruthTable(var_count, predicate2)
 
-	result1.print(result2)
+	result1.print(result2, labels=('2.' + q, '3.' + q))
 
-	if result1 == result1:
-		print(f'Passed: question {q} has the same result for the two predicates.')
-	else:
-		print(f'Failed: question {q} has different results for the two predicates.')
-
+	out1, out2 = ('Pass', 'identical') if result1 == result2 else ('Fail', 'different')
+	print(f'{out1}ed: Question {q.upper()} has {out2} results for the two predicates.')
 	print()
