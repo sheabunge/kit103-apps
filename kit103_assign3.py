@@ -34,14 +34,13 @@ def divisible_by_4(s):
 def divisible_by_11(s):
 	"""Returns True if the number represented by the string s is
 	divisible by 11, False otherwise."""
-
-	m = []
+	m = 0
 
 	for i, n in enumerate(s):
 		n = int(n)
-		m.append(-n if i % 2 == 0 else n)
+		m += n if i % 2 == 1 else -n
 
-	return sum(m) % 11 == 0
+	return m % 11 == 0
 
 # Question 2: GCD from a prime factorisations (2 marks)
 
