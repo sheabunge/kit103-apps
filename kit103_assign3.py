@@ -50,8 +50,14 @@ from collections import Counter
 
 def q2_factor_gcd(a, b):
 	"""Returns gcd(a, b), calculated from their prime factorisations."""
-	return None
+	factors_a = Counter(factor_list(a))
+	factors_b = Counter(factor_list(b))
+	exp = factors_a & factors_b
 
+	gcd = 1
+	for p in exp:
+		gcd *= p ** exp[p]
+	return gcd
 
 # Question 3: Are a and b coprime (i.e., relatively prime)? (1 mark)
 
