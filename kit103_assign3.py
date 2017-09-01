@@ -63,9 +63,17 @@ def q2_factor_gcd(a, b):
 
 # Implement your additional helper function here
 
+
+def q3_distinct_prime_factors(n):
+	if n <= 1:
+		return set()
+	prime = next((x for x in range(2, int(n ** 1/2) + 1) if n % x == 0), n)
+	return {prime} | q3_distinct_prime_factors(n // prime)
+
+
 def q3_coprime(a, b):
 	"""Returns True if a and b are coprime, False otherwise."""
-	return None
+	return not q3_distinct_prime_factors(a) & q3_distinct_prime_factors(b)
 
 
 # End of answers
