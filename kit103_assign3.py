@@ -16,26 +16,32 @@ your implementation in the IPython console.
 def divisible_by_2(s):
 	"""Returns True if the number represented by the string s is
 	divisible by 2, False otherwise."""
-	return None
+	return int(s[-1]) % 2 == 0
 
 
 def divisible_by_3(s):
 	"""Returns True if the number represented by the string s is
 	divisible by 3, False otherwise."""
-	return None
+	return sum(int(n) for n in s) % 3 == 0
 
 
 def divisible_by_4(s):
 	"""Returns True if the number represented by the string s is
 	divisible by 4, False otherwise."""
-	return None
+	return sum(int(n) for n in s[-2:]) % 4 == 0
 
 
 def divisible_by_11(s):
 	"""Returns True if the number represented by the string s is
 	divisible by 11, False otherwise."""
-	return None
 
+	m = []
+
+	for i, n in enumerate(s):
+		n = int(n)
+		m.append(-n if i % 2 == 0 else n)
+
+	return sum(m) % 11 == 0
 
 # Question 2: GCD from a prime factorisations (2 marks)
 
