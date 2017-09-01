@@ -8,7 +8,7 @@ class TruthTable:
 
 		if isinstance(variables, int):
 			self.var_count = variables
-			self.var_names = [ascii_lowercase[i] for i in range(self.var_count)]
+			self.var_names = ascii_lowercase[:variables]
 		else:
 			self.var_names = variables
 			self.var_count = len(variables)

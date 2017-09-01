@@ -30,9 +30,10 @@ failed = 0
 for case in tests:
 	*inputs, expected = case
 	result = q1_sine_wave_check(*inputs)
+	inputs = tuple(inputs)
 
 	if result != expected:
-		print(f'Failed: q1{inputs!r} = {result!r}. {expected!r} expected')
+		print(f'Failed: q1{inputs} = {result!r}. {expected!r} expected')
 		failed += 1
 	elif PRINT_PASSED:
 		print(f'Passed: q1{inputs!r} = {result!r}')
