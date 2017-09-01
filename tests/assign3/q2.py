@@ -12,6 +12,6 @@ for _ in range(N_TESTS):
 	result, actual = gcd(a, b), real_gcd(a, b)
 
 	if gcd(a, b) != real_gcd(a, b):
-		print(f'Failure: gcd({a}, {b}) returns {result} when it should return {actual}')
+		print(f'Failure: gcd{a, b} returns {result} when it should return {actual}')
 	elif PRINT_PASSED:
-		print(f'Success: gcd({a}, {b}) = {result}')
+		print(f'Success: gcd{a, b} = {result}')
