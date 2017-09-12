@@ -13,6 +13,11 @@ your implementation in the IPython console.
 
 # Question 1: Divisibility of really, really big integers (2 marks)
 
+def sum_digits(s):
+	"""Returns the numeric sum of the digits of a string of integers"""
+	return sum(int(n) for n in s)
+
+
 def divisible_by_2(s):
 	"""Returns True if the number represented by the string s is
 	divisible by 2, False otherwise."""
@@ -22,25 +27,19 @@ def divisible_by_2(s):
 def divisible_by_3(s):
 	"""Returns True if the number represented by the string s is
 	divisible by 3, False otherwise."""
-	return sum(int(n) for n in s) % 3 == 0
+	return sum_digits(s) % 3 == 0
 
 
 def divisible_by_4(s):
 	"""Returns True if the number represented by the string s is
 	divisible by 4, False otherwise."""
-	return sum(int(n) for n in s[-2:]) % 4 == 0
+	return sum_digits(s[-2:]) % 4 == 0
 
 
 def divisible_by_11(s):
 	"""Returns True if the number represented by the string s is
 	divisible by 11, False otherwise."""
-	m = []
-
-	for i, n in enumerate(s):
-		n = int(n)
-		m.append(n if i % 2 == 0 else -n)
-
-	return sum(m) % 11 == 0
+	return (sum_digits(s[::2]) - sum_digits(s[1::2])) % 11 == 0
 
 # Question 2: GCD from a prime factorisations (2 marks)
 
