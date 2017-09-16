@@ -1,7 +1,6 @@
 Programming assignment assessment report for Bunge, Shea (407095)
 	Expected	Actual	Score	Feedback
-q1_sine_wave_check	40 correct outputs given input data	40 correct	1
-
+q1_sine_wave_check	40 correct outputs given input data	40 correct	1.5
 q2_a	[False, True, True, False]	[False, True, True, False]	0.25
 q2_b	[True, True, True, True, True, True, True, False, True, True, True, True, True, True, True, True]	[True, True, True, True, True, True, True, False, True, True, True, True, True, True, True, True]	0.25
 q2_c	[False, False, False, True, True, True, True, True]	[False, False, False, True, True, True, True, True]	0.25
@@ -12,7 +11,7 @@ q3_c	[False, False, False, True, True, True, True, True]	[False, False, False, T
 q3_d	[False, False]	[False, False]	0.25
 q4_kmap	[[0, 1, 0, 0], [1, 0, 0, 0], [1, 1, 1, 1], [0, 0, 0, 0]]	[[0, 1, 0, 0], [1, 0, 0, 0], [1, 1, 1, 1], [0, 0, 0, 0]]	0.5
 q4_acme_letter_detector	16 correct outputs given input data	16 correct	1
-Total score:			4.5	/5
+Total score:			5	/5
 Note that expected and actual for q2_a through q4_kmap represent VALUES only, so your score for a question may have been manually reduced if your approach to deriving that answer needs improvement.
 The inputs to q1_sine_wave_check were generated from the Cartesian product of the following lists:
 [109, 111, 199, 201], [5, 6, 9, 10, 18], [False, True]
