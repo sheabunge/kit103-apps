@@ -27,11 +27,11 @@ def sid2permissions(sid):
 	"""
 	octid = oct(sid)[2:][-6:]  # remove 0o prefix, take last 6 digits
 	octid = '0' * (6 - len(octid)) + octid  # pad if necessary
-	return (octid[:3], octid[3:])
+	return octid[:3], octid[3:]
 
 
 # Task 1: Replace 0 with your student ID number (without leading zeroes)
-q1['sid'] = 0
+q1['sid'] = 407095
 
 # Do not modify the values assigned to these three entries
 q1['both permissions'] = sid2permissions(q1['sid'])
