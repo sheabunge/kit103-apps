@@ -40,13 +40,13 @@ q1['file B'] = q1['both permissions'][1]
 
 # Task 2: Replace the Nones with your Question 1 answers here
 q1['a-1 bitset'] = 0b100011011
-q1['a-2 g+w?'] = q1['a-1 bitset'] & 0b000010000 > 0
-q1['a-3 g+x?'] = q1['a-1 bitset'] & 0b000001000 > 0
-q1['a-4 o+r?'] = q1['a-1 bitset'] & 0b000000100 > 0
+q1['a-2 g+w?'] = q1['a-1 bitset'] & 0o020 > 0
+q1['a-3 g+x?'] = q1['a-1 bitset'] & 0o010 > 0
+q1['a-4 o+r?'] = q1['a-1 bitset'] & 0o004 > 0
 q1['b-1 bitset'] = 0b000110111
-q1['b-2 u+w?'] = q1['b-1 bitset'] & 0b010000000 > 0
-q1['b-3 g+r?'] = q1['b-1 bitset'] & 0b000100000 > 0
-q1['b-4 o+r?'] = q1['b-1 bitset'] & 0b000000100 > 0
+q1['b-2 u+w?'] = q1['b-1 bitset'] & 0o200 > 0
+q1['b-3 g+r?'] = q1['b-1 bitset'] & 0o040 > 0
+q1['b-4 o+r?'] = q1['b-1 bitset'] & 0o004 > 0
 
 # Question 2: base2base (1.5 marks, *)
 
