@@ -58,11 +58,16 @@ digits = [str(i) for i in range(0, 10)] + [c for c in capitals[:26]]
 # Declare any additional helper function here
 
 
+def dec2base(d, base):
+	q, r = divmod(d, base)
+	return ('' if q == 0 else dec2base(q, base)) + digits[r]
+
+
 def base2base(n, b1, b2):
 	"""Converts n, a string representing a number in base b1, to a
 	string representing the same value in base b2. 2 <= b1, b2 <= 36.
 	"""
-	return None
+	return dec2base(int(n, b1), b2)
 
 
 # Question 3: Really Stupid Encryption (RSE) (1.5 marks)
