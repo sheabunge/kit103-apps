@@ -39,14 +39,14 @@ q1['file A'] = q1['both permissions'][0]
 q1['file B'] = q1['both permissions'][1]
 
 # Task 2: Replace the Nones with your Question 1 answers here
-q1['a-1 bitset'] = None
-q1['a-2 g+w?'] = None
-q1['a-3 g+x?'] = None
-q1['a-4 o+r?'] = None
-q1['b-1 bitset'] = None
-q1['b-2 u+w?'] = None
-q1['b-3 g+r?'] = None
-q1['b-4 o+r?'] = None
+q1['a-1 bitset'] = 0b100011011
+q1['a-2 g+w?'] = True
+q1['a-3 g+x?'] = True
+q1['a-4 o+r?'] = False
+q1['b-1 bitset'] = 0b000110111
+q1['b-2 u+w?'] = False
+q1['b-3 g+r?'] = True
+q1['b-4 o+r?'] = True
 
 # Question 2: base2base (1.5 marks, *)
 
