@@ -88,7 +88,7 @@ def select_key(m):
 	the given message in the RSE cryptosystem
 	"""
 	# Q3a: Modify this function to determine and return the smallest valid key
-	return 36
+	return max(digits.index(c) + 1 for c in m)
 
 
 # Question 3b
@@ -96,9 +96,7 @@ def decrypt(c, b):
 	"""Decrypts the given integer message c by converting it to a
 	string representing the same value in base b.
 	"""
-	# Q3b: Replace this implementation as specified in the assignment,
-	#      including restoring spaces using with_spaces()
-	return None
+	return with_spaces(dec2base(c, b))
 
 
 # Utility functions used by encrypt and decrypt
@@ -124,8 +122,7 @@ def brute_force(c):
 	"""Generates and returns a list of pairs of possible encryption bases
 	and the plain text message that is recovered if there are used.
 	"""
-	# Q3c: Replace this implementation as specified in the assignment
-	return [(10, c)]  # currently returns the original message only
+	return [(b, decrypt(c, b)) for b in range(2, 37)]
 
 
 def print_options(options):
