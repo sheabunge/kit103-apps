@@ -87,8 +87,7 @@ def select_key(m):
 	"""Selects a key (i.e., base) that is just large enough to encrypt
 	the given message in the RSE cryptosystem
 	"""
-	# Q3a: Modify this function to determine and return the smallest valid key
-	return max(digits.index(c) + 1 for c in m)
+	return digits.index(max(m)) + 1
 
 
 # Question 3b
