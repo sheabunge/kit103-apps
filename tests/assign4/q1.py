@@ -35,7 +35,7 @@ for question, check in perm_checks:
 	bitset = q1[question[0] + '-1 bitset']
 
 	print_result(
-		question=q1[question],
+		question=question,
 		expected=bitset & check > 0,
 		answer=q1[question]
 	)
