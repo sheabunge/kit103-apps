@@ -2,8 +2,8 @@
 KIT103/KMA155 Programming Assignment 5: Permutations and Combinations
 Submission script
 
-Name: REPLACE WITH YOUR NAME
-ID: REPLACE WITH YOUR STUDENT ID
+Name: Shea Bunge
+ID: 407095
 
 Enter your answers to each question below either by replacing the
 value None with a short piece of Python code that will calculate or
