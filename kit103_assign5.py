@@ -28,10 +28,10 @@ value_ans = {}
 
 # Question 1: Permutations (1 mark)
 
-value_ans['q1 a'] = None
-value_ans['q1 b'] = None
-value_ans['q1 c'] = None
-value_ans['q1 d'] = None
+value_ans['q1 a'] = 4 ** 3
+value_ans['q1 b'] = {''.join(p) for p in product('AUGC', repeat=3)}
+value_ans['q1 c'] = fact(5) // fact(5 - 3)
+value_ans['q1 d'] = set(permutations(('cat', 'sat', 'hat', 'mat', 'pat'), 3))
 
 # Question 2: Combinations (1 mark)
 
@@ -39,29 +39,30 @@ value_ans['q1 d'] = None
 rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 students = {'Student %d' % i for i in range(1, 13)}
 
-value_ans['q2 a'] = None
-value_ans['q2 b'] = None
-value_ans['q2 c'] = None
-value_ans['q2 d'] = None
+value_ans['q2 a'] = comb(len(rainbow), 2, exact=True)
+value_ans['q2 b'] = set(combinations(rainbow, 2))
+value_ans['q2 c'] = comb(len(students), 3, exact=True)
+value_ans['q2 d'] = set(combinations(students, 3))
 
 # Question 3: You choose which (2 marks)
 
 from string import ascii_uppercase
 
 titles = set(ascii_uppercase[:18])  # 'A' through 'R'
+n_books = 18
 
-value_ans['q3 a'] = None
-value_ans['q3 b'] = None
-value_ans['q3 c'] = None
-value_ans['q3 d'] = None
+value_ans['q3 a'] = set(combinations(titles, 5))
+value_ans['q3 b'] = fact(n_books)
+value_ans['q3 c'] = set(product(titles, repeat=3))
+value_ans['q3 d'] = n_books ** 3
 
 
 # Question 4: Words are mightier than the sword (1 mark)
 
 def word_perms(word):
 	"""Returns the set of all permutations of the letters in `word`."""
-	# Question 4a: Replace None with an expression to generate all strings that area permutations of the letters in word
-	return None
+	# Question 4a: Generates all strings that are permutations of the letters in word
+	return {''.join(w) for w in permutations(word)}
 
 
 def anagrams(word):
@@ -69,8 +70,9 @@ def anagrams(word):
 	between 2 and 10 characters in length). Behaviour if it is shorter
 	or longer than that is unspecified.
 	"""
-	# Question 4b: Replace None with an expression to generate all permutations of word and filter that to contain only valid words
-	return None
+	# Question 4b: Generates all permutations of word and filters it to contain only valid words
+	valid_words = word_sets[len(word)]
+	return {w for w in word_perms(word) if w in valid_words}
 
 
 # Needed for Question 4
