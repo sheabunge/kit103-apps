@@ -49,12 +49,11 @@ value_ans['q2 d'] = set(combinations(students, 3))
 from string import ascii_uppercase
 
 titles = set(ascii_uppercase[:18])  # 'A' through 'R'
-n_books = 18
 
 value_ans['q3 a'] = set(combinations(titles, 5))
-value_ans['q3 b'] = fact(n_books)
+value_ans['q3 b'] = fact(len(titles))
 value_ans['q3 c'] = set(product(titles, repeat=3))
-value_ans['q3 d'] = n_books ** 3
+value_ans['q3 d'] = len(titles) ** 3
 
 
 # Question 4: Words are mightier than the sword (1 mark)
@@ -71,8 +70,7 @@ def anagrams(word):
 	or longer than that is unspecified.
 	"""
 	# Question 4b: Generates all permutations of word and filters it to contain only valid words
-	valid_words = word_sets[len(word)]
-	return {w for w in word_perms(word) if w in valid_words}
+	return word_perms(word) & word_sets[len(word)]
 
 
 # Needed for Question 4
